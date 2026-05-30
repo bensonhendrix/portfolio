@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Nunito Sans', sans-serif;
+
+  --color-ink: #1C1917;
+  --color-paper: #F5F2EC;
+  --color-muted: #A8A29E;
+  --color-accent: #9B1C1C; /* deep crimson */
+  --color-surface: #EDEAE3;
+}
+
+html {
+  background-color: #F5F2EC;
+  color: #1C1917;
+}

@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans">
+
+    <header>
+      <nav class="flex justify-between items-center px-8 py-6 border-b border-ink/10">
+        <a href="/" class="font-display text-xl font-semibold no-underline text-ink tracking-tight">
+          Benson Hendrix
+        </a>
+        <ul class="flex gap-10 list-none">
+          <li><a href="#work" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Work</a></li>
+          <li><a href="#about" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">About</a></li>
+          <li><a href="#contact" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer class="border-t border-ink/10 px-8 py-10 mt-32">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <span class="font-display text-sm text-muted">Benson Hendrix</span>
+        <span class="text-sm text-muted">Web Designer & Digital Media Strategist</span>
+      </div>
+    </footer>
+
+  </body>
+</html>
