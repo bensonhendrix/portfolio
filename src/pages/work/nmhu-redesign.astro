@@ -1,0 +1,211 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="NMHU Redesign — Benson Hendrix">
+
+  <!-- Case Study Header -->
+  <section class="max-w-6xl mx-auto px-8 pt-16 pb-12 border-b border-ink/10">
+    <a href="/#work" class="text-sm font-sans text-muted no-underline hover:text-accent transition-colors mb-8 block">← Back to Work</a>
+    <div class="flex gap-4 mb-6 flex-wrap">
+      <span class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">NMHU</span>
+      <span class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">2022–Present</span>
+      <span class="text-xs uppercase tracking-wider border border-accent/40 text-accent px-3 py-1">In Progress</span>
+    </div>
+    <h1 class="font-display text-6xl font-black text-ink leading-none mb-6" style="font-variation-settings: 'opsz' 144, 'WONK' 1;">
+      Redesigning a University's<br />Digital Front Door
+    </h1>
+    <p class="text-xl text-muted max-w-2xl leading-relaxed font-sans">
+      A multi-year overhaul of New Mexico Highlands University's primary web presence — rearchitecting navigation, rebuilding templates, and introducing modern content discovery tools for prospective students.
+    </p>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="max-w-6xl mx-auto px-8 py-12">
+    <div class="overflow-hidden rounded-lg border border-ink/10 max-h-[600px]">
+    <img 
+      src="/images/nmhu/index-page.webp" 
+      alt="NMHU redesigned homepage showing audience-based navigation and program search" 
+      class="w-full object-cover object-top"
+    />
+  </section>
+
+  <!-- The Challenge -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <div class="grid grid-cols-2 gap-16">
+      <div>
+        <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">01</span>
+        <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">The Challenge</h2>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          When I began the redesign, NMHU's website had a fundamental structural problem — almost every page lived at the top level of the URL hierarchy. There was no meaningful information architecture, no clear pathways for different audiences, and no way for prospective students to efficiently find programs that matched their interests.
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans">
+          The site was built to hold information, not to guide people through it. For a university whose digital presence is often the first impression a prospective student has, that wasn't good enough.
+        </p>
+      </div>
+      <div class="flex flex-col gap-6">
+        <div class="bg-surface rounded-lg p-8">
+          <p class="font-display text-5xl font-black text-accent mb-2">~80%</p>
+          <p class="text-sm text-ink font-sans uppercase tracking-wider">of pages at top-level URL</p>
+        </div>
+        <div class="bg-surface rounded-lg p-8">
+          <p class="font-display text-5xl font-black text-accent mb-2">0</p>
+          <p class="text-sm text-ink font-sans uppercase tracking-wider">audience-based navigation paths before redesign</p>
+        </div>
+        <div class="bg-surface rounded-lg p-8">
+          <p class="font-display text-5xl font-black text-accent mb-2">58+</p>
+          <p class="text-sm text-ink font-sans uppercase tracking-wider">undergraduate programs needing findable templates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Decision 1 — Navigation -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">02</span>
+    <div class="grid grid-cols-2 gap-16 items-start">
+      <div>
+        <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">Audience-Based Navigation</h2>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          The first major structural decision was rebuilding the global navigation around audiences and decisions rather than institutional departments. Prospective students don't think in org chart terms — they think in questions like "how do I apply?" or "what programs do you have?"
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          I introduced four primary audience pathways — Getting Started, Paying for College, NMHU Cowboy Life, and Our Programs — giving every visitor an immediate entry point matched to where they are in their decision process.
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans">
+          The global navigation was rebuilt from scratch to support this model, with a clear hierarchy that scales across department and program pages.
+        </p>
+      </div>
+      <div>
+        <img 
+          src="/images/nmhu/index-page.webp" 
+          alt="NMHU homepage showing audience-based navigation pathways" 
+          class="w-full object-cover object-top"
+        />
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Global Navigation System -->
+<section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+        <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">03</span>
+  <div class="grid grid-cols-2 gap-16 items-start">
+    <div>
+      <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">
+        A Navigation System Built Around People
+      </h2>
+      <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+        The new global navigation operates on two levels simultaneously. At the top, a utility bar routes four distinct audiences — Prospective Students, Current Students, Faculty & Staff, and Alumni — directly to their relevant content without requiring them to wade through the full site structure.
+      </p>
+      <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+        Below that, the main navigation opens into a full mega menu organized around how people actually think about academics — not by department name, but by purpose. Explore Programs, Colleges & Schools, Academic Resources, and Learning Experience each contain grouped, scannable links with a prominent Program Finder entry point.
+      </p>
+      <p class="text-lg text-ink leading-relaxed font-sans">
+        A persistent "Discover Your Path" callout within the mega menu keeps the Program Finder accessible from anywhere in the academic navigation — reinforcing program discovery as a primary goal throughout the site.
+      </p>
+    </div>
+    <div>
+      <img
+        src="/images/nmhu/global-navigation.webp"
+        alt="NMHU global navigation mega menu showing organized academic categories"
+        class="w-full border border-ink/10 rounded-lg"
+      />
+    </div>
+  </div>
+</section>
+
+  <!-- Key Decision 2 — Program Finder -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">04</span>
+    <div class="grid grid-cols-2 gap-16 items-start">
+      <div>
+        <img 
+          src="/images/nmhu/program-finder.webp" 
+          alt="NMHU Program Finder showing searchable program directory" 
+          class="w-full border border-ink/10 rounded-lg"
+        />
+      </div>
+      <div>
+        <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">A Searchable Program Finder</h2>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          One of the most significant additions to the redesign was building a fully searchable Program Finder — a dedicated section where prospective students can search and filter across all 58+ undergraduate and 47 graduate programs by interest, career path, or keyword.
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          A compact version of the Program Finder was also embedded directly on the homepage, giving visitors immediate access to program discovery without requiring navigation.
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans">
+          This was built in WordPress with Divi, integrating with SearchStax to power the site-wide search experience with relevant, fast results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Decision 3 — Templates -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">05</span>
+    <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">Department & Program Templates</h2>
+    <p class="text-lg text-ink leading-relaxed font-sans mb-12 max-w-2xl">
+      Every department and program needed a consistent, scalable template that could carry both institutional branding and program-specific content. I designed and built templates for department landing pages, undergraduate programs, graduate programs, and degree pathways — each structured to surface the information prospective students need most.
+    </p>
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <img 
+          src="/images/nmhu/college-page.webp" 
+          alt="Facundo Valdez School of Social Work department page" 
+          class="w-full border border-ink/10 rounded-lg mb-4"
+        />
+        <p class="text-sm text-muted font-sans">Department landing page — Facundo Valdez School of Social Work</p>
+      </div>
+      <div>
+        <img 
+          src="/images/nmhu/program-page.webp" 
+          alt="Master of Social Work program page" 
+          class="w-full border border-ink/10 rounded-lg mb-4"
+        />
+        <p class="text-sm text-muted font-sans">Program page — Master of Social Work</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcomes -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <span class="font-display text-8xl font-black leading-none block mb-6" style="color: #1C191708;">06</span>
+    <div class="grid grid-cols-2 gap-16">
+      <div>
+        <h2 class="font-display text-3xl font-bold text-ink mb-6 leading-tight">Where It Stands</h2>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-4">
+          Eight months in, the redesign is active in development and being shared with departments and staff across the university. The new information architecture, global navigation, and core templates are in place. The Program Finder is live in the dev environment and being refined based on feedback.
+        </p>
+        <p class="text-lg text-ink leading-relaxed font-sans mb-8">
+          Accessibility has been a priority throughout — the ReciteMe accessibility toolbar has been integrated to improve the experience for users with disabilities, reflecting NMHU's commitment to inclusive digital access.
+        </p>
+        <a href="https://nmhudevsitedev.wpengine.com" target="_blank" class="bg-ink text-paper px-8 py-4 font-sans text-sm font-semibold no-underline hover:bg-accent transition-colors inline-block">
+          View Dev Site →
+        </a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="font-display text-xl font-bold text-ink border-b border-ink/10 pb-4">Tools & Technologies</h3>
+        <ul class="list-none flex flex-wrap gap-2">
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">WordPress</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">Divi</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">Information Architecture</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">SearchStax</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">ReciteMe</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">UX Design</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">Content Strategy</li>
+          <li class="text-xs uppercase tracking-wider border border-ink/20 text-muted px-3 py-1">Digital Accessibility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Case Study -->
+  <section class="max-w-6xl mx-auto px-8 py-16 border-t border-ink/10">
+    <div class="flex justify-between items-center">
+      <a href="/#work" class="text-sm font-sans text-muted no-underline hover:text-accent transition-colors">← All Work</a>
+      <a href="/work/nmt-redesign" class="text-sm font-sans text-accent no-underline hover:underline">Next: Cutting Content Migration Time in Half →</a>
+    </div>
+  </section>
+
+</Layout>
