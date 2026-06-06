@@ -19,11 +19,20 @@ const { title } = Astro.props;
         <a href="/" class="font-display text-xl font-semibold no-underline text-ink tracking-tight">
           Benson Hendrix
         </a>
-        <ul class="flex gap-10 list-none">
-          <li><a href="https://bensonhendrix.com/#work" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Work</a></li>
-          <li><a href="https://bensonhendrix.com/#about" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">About</a></li>
-          <li><a href="https://bensonhendrix.com/#contact" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Contact</a></li>
+
+        <!-- Desktop nav — hidden on mobile -->
+        <ul id="nav-links" class="hidden md:flex gap-10 list-none">
+          <li><a href="#work" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Work</a></li>
+          <li><a href="#about" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">About</a></li>
+          <li><a href="#contact" class="text-sm font-sans no-underline text-muted hover:text-ink transition-colors">Contact</a></li>
         </ul>
+
+        <!-- Hamburger button — visible only on mobile -->
+        <button id="nav-toggle" class="md:hidden flex flex-col gap-1.5 cursor-pointer bg-transparent border-none p-2">
+          <span class="block w-6 h-0.5 bg-ink transition-all"></span>
+          <span class="block w-6 h-0.5 bg-ink transition-all"></span>
+          <span class="block w-6 h-0.5 bg-ink transition-all"></span>
+        </button>
       </nav>
     </header>
 
@@ -38,3 +47,22 @@ const { title } = Astro.props;
 
   </body>
 </html>
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('hidden');
+    links.classList.toggle('flex');
+    links.classList.toggle('flex-col');
+    links.classList.toggle('absolute');
+    links.classList.toggle('top-20');
+    links.classList.toggle('left-0');
+    links.classList.toggle('w-full');
+    links.classList.toggle('bg-paper');
+    links.classList.toggle('px-8');
+    links.classList.toggle('py-6');
+    links.classList.toggle('border-b');
+    links.classList.toggle('border-ink/10');
+  });
+</script>
